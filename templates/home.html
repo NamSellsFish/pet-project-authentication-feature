@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+
+{%block title%}Home{%endblock%}
+
+{%block content%}
+{%if user.is_authenticated %}
+
+    Hello {{user}}
+    <p><a href="{%url 'logout'%}">Log Out</a></p>
+    <p><a href="{%url 'debug_page'%}">Debug Page</a></p>
+{%else%}
+    Sorry. But we can't let you in now!!
+    <p><a href="{%url 'login'%}">Try a little Log In?</a></p>
+{%endif%}
+{%endblock%}
