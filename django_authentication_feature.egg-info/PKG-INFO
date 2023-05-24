@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-authentication-feature
+Version: 0.0.1
+Summary: A practical project to learn Django framework
+Author-email: "Mr N.S.F" <nhatnam0192123@gmail.com>
+Maintainer-email: "Mr N.S.F" <nhatnam0192123@gmail.com>
+Keywords: Django,web,pet project
+Requires-Python: >=3.10.0
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: doc
