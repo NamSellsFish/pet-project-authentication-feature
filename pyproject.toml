@@ -1,0 +1,46 @@
+NOTE = "Code workout with Django web app"
+
+
+[project]
+name = "django-authentication-feature"
+version = "0.0.1"
+description = "A practical project to learn Django framework"
+requires-python = ">=3.10.0"
+authors = [{name = "Mr N.S.F" ,email = "nhatnam0192123@gmail.com"}]
+maintainers = [{name = "Mr N.S.F" ,email = "nhatnam0192123@gmail.com"}]
+keywords = [
+    "Django",
+    "web",
+    "pet project"
+]
+
+dependencies = [
+    "django",
+
+    "djangorestframework",
+    "black",
+]
+
+[project.optional-dependencies]
+dev = [
+    "uvicorn[stardard]",
+    "pyupgrade",
+    "tomli",
+    "tomli_w",
+    "fastapi",
+]
+test = [
+
+]
+
+doc = [
+    "mkdocs",
+    "mkdocs",
+    "mkdocstrings[python]",
+    "mkdocs-material"
+]
+
+
+# Ignore flat-layout, phải có cái này mới không bị lỗi
+[tool.setuptools]
+py-modules = []

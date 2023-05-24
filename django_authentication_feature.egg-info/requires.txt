@@ -1,0 +1,17 @@
+django
+djangorestframework
+black
+
+[dev]
+uvicorn[stardard]
+pyupgrade
+tomli
+tomli_w
+fastapi
+
+[doc]
+mkdocs
+mkdocstrings[python]
+mkdocs-material
+
+[test]
