@@ -23,6 +23,5 @@ urlpatterns = [
     path("",default_urlconf,name='debug_page'),
     path("admin/", admin.site.urls),
     path("home/",TemplateView.as_view(template_name="home.html"), name = 'home'),
-    path("auth_feature/", include("auth_feature.urls")),
     path("auth_feature/",include("django.contrib.auth.urls"))
 ]
