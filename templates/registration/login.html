@@ -1,6 +1,6 @@
 {%extends 'base.html'%}
 
-{%block title%}{%endblock%}
+{%block title%}Log In{%endblock%}
 
 {%block content%}
 <form method="post">
@@ -8,4 +8,6 @@
     {{form.as_p}}
     <button type="submit">Log In</button>
 </form>
+<a href="{%url 'password_reset'%}">Forgot Password?</a>
+<a href="{%url 'signup'%}">Not already have an account? Get one!</a>
 {%endblock%}
