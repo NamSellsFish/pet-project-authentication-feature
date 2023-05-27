@@ -1,7 +1,8 @@
-"""setup_proj URL Configuration
+"""
+URL configuration for setup_proj project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -14,8 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
+from django.views.debug import default_urlconf
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("",default_urlconf,name='debug_page'),
+    path("admin/", admin.site.urls),
+    path("home/",TemplateView.as_view(template_name="home.html"), name = 'home'),
+    path("auth_feature/", include("auth_feature.urls")),
+    path("auth_feature/",include("django.contrib.auth.urls"))
 ]

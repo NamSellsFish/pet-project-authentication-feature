@@ -4,7 +4,6 @@
 
 {%block content%}
 {%if user.is_authenticated %}
-
     Hello {{user}}
     <p><a href="{%url 'logout'%}">Log Out</a></p>
     <p><a href="{%url 'debug_page'%}">Debug Page</a></p>
