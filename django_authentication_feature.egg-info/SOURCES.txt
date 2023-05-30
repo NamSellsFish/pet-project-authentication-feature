@@ -1,0 +1,6 @@
+pyproject.toml
+django_authentication_feature.egg-info/PKG-INFO
+django_authentication_feature.egg-info/SOURCES.txt
+django_authentication_feature.egg-info/dependency_links.txt
+django_authentication_feature.egg-info/requires.txt
+django_authentication_feature.egg-info/top_level.txt
