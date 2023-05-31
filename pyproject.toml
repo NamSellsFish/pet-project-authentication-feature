@@ -19,7 +19,8 @@ dependencies = [
     "django-environ",
     "djangorestframework",
     "black",
-    "psycopg2"
+    "psycopg2",
+    "names"
 ]
 
 [project.optional-dependencies]
