@@ -1,6 +1,8 @@
 django
+psycopg2
 djangorestframework
 black
+django-environ
 
 [dev]
 uvicorn[stardard]

@@ -16,9 +16,10 @@ keywords = [
 
 dependencies = [
     "django",
-
+    "psycopg2",
     "djangorestframework",
     "black",
+    "django-environ"
 ]
 
 [project.optional-dependencies]
