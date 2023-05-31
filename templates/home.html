@@ -1,14 +1,14 @@
 {%extends 'base.html'%}
 
-{%block title%}Home{%endblock%}
+{%block title%}Trang chủ{%endblock%}
 
 {%block content%}
 {%if user.is_authenticated %}
-    Hello {{user}}
-    <p><a href="{%url 'logout'%}">Log Out</a></p>
-    <p><a href="{%url 'debug_page'%}">Debug Page</a></p>
+    Chào {{user}} nghèo khổ giữa cuộc sống cô đơn!
+    <p><a href="{%url 'logout'%}">Đăng xuất</a></p>
+    <p><a href="{%url 'debug_page'%}">Đến trang Debug</a></p>
 {%else%}
-    Sorry. But we can't let you in now!!
-    <p><a href="{%url 'login'%}">Try a little Log In?</a></p>
+    Sorry. Giờ chúng tôi không thể cho bạn vào được!!
+    <p><a href="{%url 'login'%}">Làm miếng đăng nhập xem sao?</a></p>
 {%endif%}
 {%endblock%}

@@ -14,7 +14,7 @@ class MyUser(AbstractUser):
         ('O', 'Others'),
     )
     username_validator = UnicodeUsernameValidator()
-    email = models.EmailField(_("email address"), unique=True)
+    email = models.EmailField(_("Địa chỉ email"), unique=True)
     birthdate = models.DateField(_("Sinh nhật"), default= timezone.now() - timezone.timedelta(days=(3650-random.randint(100,1500))))
     gender = models.CharField(_("Giới tính"), max_length=1, choices=GENDER_CHOICES)
     username = models.CharField(
@@ -22,11 +22,11 @@ class MyUser(AbstractUser):
         max_length=150,
         unique=True,
         help_text=_(
-            "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+            "Bắt buộc. Tối đa 150 kí tự. Chỉ chấp nhận chữ cái latinh, chữ số và @/./+/-/_."
         ),
         validators=[username_validator],
         error_messages={
-            "unique": _("A user with that username already exists."),
+            "unique": _("Đã có người dùng xài tên này."),
         },
         default=names.get_full_name()
     )
