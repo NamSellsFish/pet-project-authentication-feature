@@ -3,6 +3,7 @@ django-environ
 djangorestframework
 black
 psycopg2
+names
 
 [dev]
 uvicorn[stardard]
