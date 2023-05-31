@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'setup_proj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default':{
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/"database.db"
+    },
+    'postgres_db' :  {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': get_env("DB_NAME"),
         'USER': get_env("DB_USER"),
